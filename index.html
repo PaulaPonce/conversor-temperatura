@@ -6,17 +6,15 @@
 </head>
 <body>
 	<h1>Convertidor de temperatura</h1>
-	<form action="">
-		<p>Celsius
+	<form oninput="fahrenheit.value=(1.8*celsius.value)+32" >
+		<p>Celsius:
 			<input type="number" name="celsius" id="celsius" required/>
 		</p>
-		<p>Farenheit
-			<input type="text" name="farenheit" id="farenheit" required/>
-		</p>
-		
-		<button type="button" onclick="convertirCelsius(); return false">Convert to Celsius</button>
+		<p>Fahrenheit:		
+			<output name="fahrenheit" id="fahrenheit" for="celsius"></output>
+		</p>		
+		<button type="submit" onclick="convertirCelsius(); return false">Convert to Celsius</button>
 	</form>	
 		<script type="text/javascript" src="js/javascript.js"></script>
-
 </body>
 </html>
