@@ -3,23 +3,119 @@
 <head>
 	<meta charset="utf-8">
 	<title>Convertidor de Unidades de Temperatura</title>
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- Favicon -->
 	<link rel="icon"
       type="image/ico"
       href="assets/img/favicon.ico">
+    <!-- FontAwesome -->
+	<script src="https://use.fontawesome.com/b432f04897.js"></script>
+	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
-	<h1>Convertidor de temperatura</h1>
-	<form oninput="fahrenheit.value=(1.8*celsius.value)+32" >
-		<p>Celsius:
-			<input type="number" name="celsius" id="celsius" required/>
-		</p>
-		<p>Fahrenheit:		
-			<output name="fahrenheit" id="fahrenheit" for="celsius"></output>
-		</p>		
-		<button type="submit" onclick="convertirCelsius(); return false">Convert to Celsius</button>
-	</form>
+	<header>
+		<h1>Convertidor de Unidades de Temperatura</h1>
+	</header>
+	<section>
+		<table align="center">
+			<thead>
+				<tr>
+					<td colspan="3">Ingresar temperatura <i class="fa fa-thermometer-half" aria-hidden="true"></i></td>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- fila 1 -->
+				<tr>
+					<th>Fahrenheit</th>
+					<td>
+						<label for="fahrenheit"></label>
+						<input type="number" name="fahrenheit" id="fahrenheit"/>
+					</td>
+					<td>°F</td>
+				</tr>
+				<!-- fila 2 -->
+				<tr>
+					<th>Celcius</th>
+					<td>
+						<label for="celcius"></label>
+						<input type="number" name="celcius" id="celcius"/>
+					</td>
+					<td>°C</td>
+				</tr>
+				<!-- fila 3 -->
+				<tr>
+					<th>Kelvin</th>
+					<td>
+						<label for="kelvin"></label>
+						<input type="number" name="kelvin" id="kelvin"/>
+					</td>
+					<td>K</td>
+				</tr>
+				<!-- fila 4 -->
+				<tr>
+					<th>Réaumur</th>
+					<td>
+						<label for="reaumur"></label>
+						<input type="number" name="reaumur" id="reaumur"/>
+					</td>
+					<td>°Ré</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">
+						<button type="button" class="btn" onclick="convertirTemperatura()">CALCULAR</button>
+					</td>	
+				</tr>
+				<tr>
+					<td colspan="3">
+						<button type="button" onclick="limpiarCampos()">Borrar</button>
+					</td>	
+				</tr>
+			</tfoot>
+		</table>
+		<div class="math">
+			<p>Equivalencia entre escalas de temperatura:</p>
+			<div>
+				<math>
+				<mfrac>
+					<mi>°C</mi>
+					<mi>5</mi>
+				</mfrac>		
+			</math>
+			<p>=</p>	
+			<math>
+				<mfrac>
+					<mi>°F-32</mi>
+					<mi>9</mi>
+				</mfrac>
+			</math>
+			<p>=</p>
+			<math>
+				<mfrac>
+					<mi>K-273.15</mi>
+					<mi>5</mi>
+				</mfrac>
+			</math>
+			<p>=</p>
+			<math>
+				<mfrac>
+					<mi>°Ré-491.67</mi>
+					<mi>9</mi>
+				</mfrac>
+			</math>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<small>Desarrollado por <b>Paula Ponce Zúñiga</b></small>
+	</footer>
 
+	<!-- MathML -->
+	<script src="http://fred-wang.github.io/mathml.css/mspace.js"></script>
+	<!-- JS -->
 	<script type="text/javascript" src="assets/js/javascript.js"></script>
 </body>
 </html>
