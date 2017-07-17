@@ -7,6 +7,7 @@ body{
 	margin: 0;
 }
 
+
 header{
 	color: #BFDCD9;
 	background-color: #0A151D;
@@ -63,15 +64,17 @@ button:hover{
 	opacity: .8;
 }
 
+.math-container{
+	display: table;
+	border: double #0A151D;
+	-webkit-margin-start: auto;
+	-webkit-margin-end: auto;	
+}
+
 .math{
 	background-color: #BFDCD9;
-	border: double #0A151D;
-	margin-top: 1em;
-	margin-bottom: 4em;
-	margin-left: 30%;
-	margin-right: 30%;
-	/*margin: 1em 36em 4em 36em;*/
-
+	display: table-row-group;
+    vertical-align: middle;
 }
 .math p:first-child{
 	display: block;
@@ -89,8 +92,9 @@ button:hover{
 }
 
 footer{
+	left: auto;
 	padding: 2em;
-	margin: 0;
+	margin: 0 auto;
 }
 
 /* https://color.adobe.com/es/Copia-de-F%C3%A4rgtema-7-color-theme-9772463/ */
