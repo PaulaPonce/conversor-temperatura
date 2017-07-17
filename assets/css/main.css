@@ -1,0 +1,91 @@
+body{
+	font-family: monospace;
+	color: #0A151D;
+	background-color: #D6E4EA;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	color: #BFDCD9;
+	background-color: #0A151D;
+}
+header h1{
+	padding: 2em;
+	margin: 0;
+}
+
+table{
+	font-size: 1.2em;
+	margin-top: 4em;
+	margin-bottom: 2em;
+}
+
+table, 
+th, 
+td{
+	border: 1px solid #0A151D;
+}
+
+table thead tr td, 
+table tfoot tr td{
+	color: #D6E4EA;
+	background-color: #325658;
+	padding: 1em;
+}
+
+table tbody{
+	background-color: #BFDCD9;
+}
+
+table tbody tr th{
+	text-align: left;
+	width: 110px;
+	padding-left: .5em;
+}
+table tbody tr td:nth-child(3){
+	padding-right: .5em;
+}
+
+.btn{
+	font-weight: bold;
+}
+
+button{
+	color: #D6E4EA;
+	background-color: #0A151D;
+	border: 1px solid #0A151D;
+	border-radius: 5px;
+	padding: .5em 1em;
+}
+button:hover{
+	opacity: .8;
+}
+
+.math{
+	background-color: #BFDCD9;
+	border: double #0A151D;
+	margin: 1em 36em 4em 36em;
+}
+.math p:first-child{
+	display: block;
+}
+.math div:nth-child(2){
+	margin: 2em;
+}
+.math math{
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: .5em;
+}
+.math p{
+	display: inline-block;
+}
+
+footer{
+	padding: 2em;
+	margin: 0;
+}
+
+/* https://color.adobe.com/es/Copia-de-F%C3%A4rgtema-7-color-theme-9772463/ */
