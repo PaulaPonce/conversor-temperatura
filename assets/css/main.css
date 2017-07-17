@@ -66,7 +66,12 @@ button:hover{
 .math{
 	background-color: #BFDCD9;
 	border: double #0A151D;
-	margin: 1em 36em 4em 36em;
+	margin-top: 1em;
+	margin-bottom: 4em;
+	margin-left: 30%;
+	margin-right: 30%;
+	/*margin: 1em 36em 4em 36em;*/
+
 }
 .math p:first-child{
 	display: block;
